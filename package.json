@@ -1,0 +1,22 @@
+{
+  "name": "typescript-express-boilerplate",
+  "description": "TypeScript Express Boilerplate",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/typescript-express-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/typescript-express-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/typescript-express-boilerplate/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  }
+}
