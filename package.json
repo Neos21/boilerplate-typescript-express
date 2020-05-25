@@ -3,8 +3,10 @@
   "description": "TypeScript Express Boilerplate",
   "private": true,
   "scripts": {
+    "ts-node": "ts-node",
     "tsc": "tsc",
-    "start-ts": "ts-node ./src/index.ts"
+    "start-ts": "ts-node ./src/index.ts",
+    "dev": "ts-node-dev ./src/index.ts"
   },
   "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
   "license": "MIT",
@@ -28,6 +30,7 @@
     "@types/express": "4.17.6",
     "@types/node": "14.0.5",
     "ts-node": "8.10.1",
+    "ts-node-dev": "1.0.0-pre.44",
     "typescript": "3.9.3"
   }
 }
