@@ -8,7 +8,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  findSuccess(res: express.Response): Function {
+  findSuccess(res: express.Response): (result: unknown) => void {
     return (result: unknown): void => {
       res.status(200);  // OK
       res.json(result);
@@ -21,7 +21,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  findError(res: express.Response): Function {
+  findError(res: express.Response): (error: unknown) => void {
     return (error: unknown): void => {
       res.status(404);  // Not Found
       res.json(error);
@@ -34,7 +34,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  createSuccess(res: express.Response): Function {
+  createSuccess(res: express.Response): (result: unknown) => void {
     return (result: unknown): void => {
       res.status(200);  // OK
       res.json(result);
@@ -47,7 +47,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  deleteError(res: express.Response): Function {
+  deleteError(res: express.Response): (error: unknown) => void {
     return (error: unknown): void => {
       res.status(404);  // Not Found
       res.json(error);
@@ -60,7 +60,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  editSuccess(res: express.Response): Function {
+  editSuccess(res: express.Response): (result: unknown) => void {
     return (result: unknown): void => {
       res.status(204);  // No Content
       res.json(result);
@@ -73,7 +73,7 @@ export default class Controller {
    * @param res レスポンス
    * @return レスポンス関数
    */
-  editError(res: express.Response): Function {
+  editError(res: express.Response): (error: unknown) => void {
     return (error: unknown): void => {
       res.status(500);  // Internal Server Error
       res.json(error);

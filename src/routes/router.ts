@@ -31,6 +31,7 @@ router.get('/test-error-2', asyncWrap(async (_req, res) => {
 router.use('/users', usersRouter);
 
 // エラーミドルウェア
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 router.use((error: express.ErrorRequestHandler, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error('Error Middleware', error);
   res.status(500);
