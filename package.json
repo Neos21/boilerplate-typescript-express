@@ -3,7 +3,8 @@
   "description": "TypeScript Express Boilerplate",
   "private": true,
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "start-ts": "ts-node ./src/index.ts"
   },
   "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
   "license": "MIT",
